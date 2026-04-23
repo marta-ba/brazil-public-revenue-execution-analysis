@@ -1,111 +1,133 @@
+# Project 2 · Analysis of Public Revenue Execution in Brazil (2013–2021)
 
-# **Análisis de la Ejecución de Ingresos Públicos en Brasil 2013-2021**
+## Overview
+This project analyzes how effectively Brazilian public institutions executed projected public revenue between **2013 and 2021**. Each year, government agencies estimate how much revenue they expect to collect, but actual collection often differs due to factors such as tax evasion, economic fluctuations, administrative inefficiencies, and structural issues.
 
+The project combines multiple datasets, normalizes them, and analyzes them jointly to identify **patterns, recurring underperformance, and inefficiencies in revenue execution** across agencies and administrative units.
 
+---
 
-## **Descripción del Proyecto** 
+## Project Objective
+Identify patterns and problematic areas where actual revenue collection consistently fell below forecasted revenue over a **7-year period (2013–2021)**.
 
-   - El gobierno de Brasil, a través de sus distintos órganos, gestiona la recaudación de ingresos públicos para financiar los servicios y proyectos que benefician a la sociedad. Cada año, se realiza una planificación detallada para prever cuánto se espera recaudar, pero a menudo la recaudación real difiere de lo previsto debido a diversos factores como la evasión fiscal, fluctuaciones económicas, ineficiencias administrativas, entre otros.
+---
 
-   - Incluye qué técnicas o enfoques se usaron para llevar a cabo el análisis:   Este proyecto realiza un análisis exploratorio de cada una de las base de datos, que tras la normalización, se unen para analizar el conjunto en su totalidad.
+## Specific Objectives
 
-   - El presente trabajo consiste en identificar patrones, detectar áreas problemáticas donde la recaudación ha sido consistentemente menor a la previsto en 7 años [2013-2021]
+- **Measure deviations between forecasted and collected revenue**  
+  Determine which economic categories or revenue types show the largest gaps.
 
+- **Analyze the evolution of revenue collection over time**  
+  Examine how forecasts and actual collections changed year by year, and detect temporal patterns such as months with larger discrepancies.
 
+- **Evaluate performance by agency and management unit**  
+  Identify which government bodies and administrative units were more efficient in meeting revenue targets, and which consistently underperformed.
 
-## **Objetivos específicos**
+---
 
-- Encontrar desviaciones entre lo previsto y lo recaudado: Determinar en qué categorías económicas o tipos de ingresos las diferencias son más pronunciadas.
+## Methodology
 
-- Evolución temporal de la recaudación: Identificar cómo han cambiado las previsiones y recaudaciones año a año, y si existen patrones temporales, como meses específicos donde hay mayores discrepancias.
+### 1. Exploratory Data Analysis (EDA)
+An exploratory analysis was conducted on each dataset individually to:
 
-- Rendimiento por órgano y unidad gestora: Evaluar qué órganos o unidades gestoras son más eficientes en términos de alcanzar las metas de recaudación y cuáles presentan consistentemente una baja ejecución.
+- Understand variable structure and data quality
+- Identify relevant dimensions for comparison
+- Detect outliers and inconsistencies
+- Explore patterns in revenue forecasts and execution
 
+### 2. Data Normalization and Integration
+After cleaning and standardizing the datasets, they were merged into a unified analytical dataset to evaluate the system as a whole.
 
-## **Estructura del Proyecto**
+### 3. Comparative and Temporal Analysis
+The final dataset was used to:
 
-        
-        ├── data/                # Datos crudos y procesados
-        ├── Proyecto_EDA_Brasil/ # Notebooks de Jupyter con el análisis
-        ├── src/                 # Scripts de procesamiento y modelado
-        ├── results/             # Gráficos y archivos de resultados
-        ├── README.md            # Descripción del proyecto
-        
+- Compare forecasted vs. actual revenue
+- Measure absolute and relative deviations
+- Analyze performance across years, agencies, and management units
+- Detect consistency and volatility in revenue execution
 
-## 🛠️ Instalación y Requisitos
-        Este proyecto usa Python 3.8 y requiere las siguientes bibliotecas:
-        - pandas
-        - numpy
-        - matplotlib
-        - seaborn
-        - scikit-learn
+---
 
+## Main Findings
 
+### Agencies with the lowest execution rates
+The analysis identified public institutions with the lowest average budget execution rates. Among the most critical cases were:
 
-## 📊 Resultados y Conclusiones
+- **Hospital Cristo Redentor S.A.**
+- **Brazilian Space Agency**
 
-- Órganos con menor ejecución presupuestaria:
+Both showed an **average execution rate below 6%**.
 
-Se identificaron los órganos con los porcentajes más bajos de ejecución presupuestaria. Entre ellos destacan:
-      
-      - Hospital Cristo Redentor S.A. y Agencia Espacial Brasileña, con un porcentaje de ejecución promedio inferior al 6%.
+This reveals critical areas where planning and budget execution require substantial improvement.
 
-Estos resultados revelan áreas críticas donde la planeación y ejecución presupuestaria necesitan mejoras sustanciales.
+### Agencies with the highest inconsistency
+The institutions with the greatest variability in execution over time included:
 
-- Órganos con mayor inconsistencia (desviación estándar):
+- **Ministry of the Environment (linked units)**
+- **Federal Data Processing Service**
 
-Los órganos con mayor variabilidad en la ejecución a lo largo del tiempo incluyen:
-         
-         - Ministerio del Medio Ambiente (unidades vinculadas) y Servicio Federal de Procesamiento de Datos.
+This suggests unstable financial planning and difficulty allocating resources efficiently over time.
 
-Esto sugiere que no cuentan con una planificación financiera estable, dificultando la asignación eficiente de recursos.
+### Evolution of key variables over time
+When evaluating **Forecast**, **Actual Revenue**, **Absolute Difference**, and **Deviation Percentage**, the analysis found that:
 
+- **Forecast** and **Actual Revenue** remained relatively stable over time, suggesting consistency in total budget planning but no significant improvement in results.
+- **Deviation Percentage** followed a fairly uniform trend, which may indicate a lack of meaningful adjustments in forecasting or execution methodology.
 
-- Evolución de las variables clave en el tiempo:
+---
 
-Al evaluar las variables Previsión, Real, Diferencia Absoluta, y Porcentaje de Desviación, se observó lo siguiente:
+## Key Insights
 
-      - Previsión y Real presentan valores relativamente constantes, indicando estabilidad en la planificación de presupuestos totales, pero sin una mejora significativa en los resultados.
+- Some public institutions consistently fail to meet projected revenue targets.
+- Low execution rates and high volatility suggest structural inefficiencies in planning and resource management.
+- Stable forecasts over time, without performance improvement, may indicate limited institutional learning from previous years.
+- Certain agencies should be prioritized for targeted intervention and monitoring.
 
-      - Porcentaje de Desviación muestra una tendencia uniforme, lo que podría estar relacionado con una falta de ajustes en la metodología de previsión o ejecución.
+---
 
+## Conclusions
 
-**Conclusiones**
+### Inefficient budget planning in key institutions
+Agencies with both **low execution rates** and **high inconsistency** demonstrate weaknesses in budget management, whether due to poor planning, inadequate execution, or structural limitations.
 
-1. Planificación Presupuestaria Ineficiente en Órganos Clave:
+### Limited improvement over time
+The relative stability in forecasted and actual revenue suggests that there have been **no major corrective efforts** to improve execution performance across the years.
 
-         Los órganos con bajo porcentaje de ejecución y alta inconsistencia evidencian deficiencias en la gestión presupuestaria, ya sea por falta de planeación, ejecución inadecuada o problemas estructurales.
+### Opportunity for institutional improvement
+A more dynamic forecasting and evaluation process could improve public revenue execution and resource allocation efficiency.
 
-2. Análisis de Tendencias en el Tiempo:
+---
 
-         La estabilidad en los valores de Previsión y Real sugiere que no hay esfuerzos significativos para mejorar la ejecución en el tiempo. Esto puede indicar que no se están realizando ajustes basados en aprendizajes de años anteriores.
+## Recommendations
 
-3. Propuesta de Mejora:
+- Prioritize agencies with low execution rates for operational review.
+- Investigate root causes behind underperformance, including planning issues, resource allocation problems, or policy execution barriers.
+- Implement stronger monitoring systems for agencies with high volatility.
+- Improve forecasting methodologies using more adaptive evaluation mechanisms.
+- Strengthen institutional capacity through better processes, training, and technology.
 
-         - Los órganos con baja ejecución deben ser priorizados para revisar sus planes de acción.
-         
-         - Implementar métodos de evaluación y ajuste más dinámicos en los procesos de previsión y ejecución podría mejorar la eficiencia presupuestaria.
+---
 
+## Tech Stack
 
+**Language:** Python 3.8
 
- ## 🔄 Próximos Pasos
-   
-   1. Identificación de áreas críticas:
-       - Los órganos con menor porcentaje de ejecución deben ser revisados para entender las causas subyacentes (problemas de planeación, asignación de recursos, o ejecución de políticas)  
-       - Los órganos con mayor inconsistencia requieren mecanismos de control que reduzcan la variabilidad y permitan una ejecución más predecible.
-  
+**Main Libraries:**
 
-   2. Diseñar estrategias específicas:
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `seaborn`
+- `scikit-learn`
 
-      - Implementar medidas de seguimiento y soporte para los órganos con baja ejecución y alta inconsistencia.
-      - Fomentar la capacitación y el uso de herramientas tecnológicas que mejoren la precisión de las previsiones y la ejecución de las metas.
-        - Refinar el modelo predictivo usando más datos históricos.
-        - Implementar técnicas avanzadas de feature engineering para mejorar la precisión.
-        
+---
 
- ## 🤝 Contribuciones
-      Las contribuciones son bienvenidas. Si deseas mejorar el proyecto, por favor abre un pull request o una issue.
-      
- ## ✒️ Autores
-       Marta Blanco - [@marta-ba] (https://github.com/juanperez)
-        
+## Project Structure
+
+```bash
+.
+├── data/                # Raw and processed data
+├── Proyecto_EDA_Brasil/ # Jupyter notebooks with the analysis
+├── src/                 # Data processing and modeling scripts
+├── results/             # Charts and output files
+└── README.md            # Project documentation
