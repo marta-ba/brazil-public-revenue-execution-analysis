@@ -1,4 +1,4 @@
-# Project 2 · Analysis of Public Revenue Execution in Brazil (2013–2021)
+# Analysis of Public Revenue Execution in Brazil (2013–2021)
 
 ## Overview
 This project analyzes how effectively Brazilian public institutions executed projected public revenue between **2013 and 2021**. Each year, government agencies estimate how much revenue they expect to collect, but actual collection often differs due to factors such as tax evasion, economic fluctuations, administrative inefficiencies, and structural issues.
