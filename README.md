@@ -2,7 +2,7 @@
 
 
 ## Overview
-This project analyzes how effectively Brazilian public institutions executed projected public revenue between **2013 and 2021**. Each year, government agencies https://github.com/marta-ba/brazil-public-revenue-execution-analysis/blob/main/README.mdestimate how much revenue they expect to collect, but actual collection often differs due to factors such as tax evasion, economic fluctuations, administrative inefficiencies, and structural issues.
+This project analyzes how effectively Brazilian public institutions executed projected public revenue between **2013 and 2021**. Each year, government agencies estimate how much revenue they expect to collect, but actual collection often differs due to factors such as tax evasion, economic fluctuations, administrative inefficiencies, and structural issues.
 
 The project combines multiple datasets, normalizes them, and analyzes them jointly to identify **patterns, recurring underperformance, and inefficiencies in revenue execution** across agencies and administrative units.
 
